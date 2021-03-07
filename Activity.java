@@ -1,4 +1,5 @@
 public interface Activity {
     String getName();
-    public void run() throws TypeQException ;
+
+    public void run() throws TypeQException;
 }

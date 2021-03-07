@@ -16,7 +16,7 @@ public class DrawStar implements Activity {
 
         if (alignLeft == 0)
             isAlignLeft = false;
-            
+
         io.tell("Press 1 to have topside, 0 to have reverse triangle");
         int topSide = io.listenInt();
 
@@ -30,22 +30,6 @@ public class DrawStar implements Activity {
 
         io.tell("Draw triangle fonksiyonu çizimi :");
         drawTriangle(levelNo, isAlignLeft, isTopSide);
-
-
-        /*io.tell("ayrı fonksiyonların çizimi :");
-
-        if (alignLeft == 1 && topSide == 1) {
-            drawLeftAlignedTriangle(levelNo);
-        }
-        if (alignLeft == 0 && topSide == 1) {
-            drawRighttAlignedTriangle(levelNo);
-        }
-        if (alignLeft == 1 && topSide == 0) {
-            drawLeftAlignedReverseTriangle(levelNo);
-        }
-        if (alignLeft == 0 && topSide == 0) {
-            drawRightAlignedReverseTriangle(levelNo);
-        }*/
 
     }
 
@@ -80,69 +64,6 @@ public class DrawStar implements Activity {
             io.print("\n");
         }
     }
-
-    /*public void drawLeftAlignedTriangle(int levelNo) {
-        int count = 0;
-        boolean isLeftAligned = true;
-        int eCount = levelNo;
-
-        for (int i = 0; i < levelNo; i++) {
-            count++;
-            for (int j = 0; j < count; j++) {
-                if (!isLeftAligned) {
-                    for (int k = 0; k < eCount; k++) {
-                        io.print(" ");
-                    }
-                }
-                io.print("*");
-
-            }
-            io.print("\n");
-        }
-    }
-
-    public void drawRighttAlignedTriangle(int levelNo) {
-        int count = 0;
-        int eCount = levelNo;
-        for (int i = 0; i <= levelNo; i++) {
-            for (int k = 0; k < eCount; k++) {
-                io.print(" ");
-            }
-            for (int j = 0; j < count; j++) {
-                io.print("*");
-            }
-            count++;
-            eCount--;
-            io.print("\n");
-        }
-    }
-
-    public void drawLeftAlignedReverseTriangle(int levelNo) {
-        int count = levelNo;
-        for (int i = 0; i <= levelNo; i++) {
-            for (int j = 0; j < count; j++) {
-                io.print("*");
-            }
-            count--;
-            io.print("\n");
-        }
-    }
-
-    public void drawRightAlignedReverseTriangle(int levelNo) {
-        int count = levelNo;
-        int eCount = 0;
-        for (int i = 0; i <= levelNo; i++) {
-            for (int k = 0; k < eCount; k++) {
-                io.print(" ");
-            }
-            for (int j = 0; j < count; j++) {
-                io.print("*");
-            }
-            count--;
-            eCount++;
-            io.print("\n");
-        }
-    }*/
 
     @Override
     public String getName() {

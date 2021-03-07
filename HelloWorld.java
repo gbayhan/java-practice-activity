@@ -1,6 +1,6 @@
 public class HelloWorld implements Activity {
     private Communicator insCommunicator;
-   
+
     public HelloWorld(Communicator communicator) {
         insCommunicator = communicator;
     }
@@ -15,5 +15,5 @@ public class HelloWorld implements Activity {
     public String getName() {
         return "Hello World";
     }
-    
+
 }
